@@ -1,0 +1,6 @@
+<h1>Soups</h1>
+<ul>
+  <% @soups.each do |soup| %>
+      <li><%= link_to soup.name, soup %>( <%= link_to "As admin #{soup.name}", "/soups/#{soup.id}?admin=true" %>)</li>
+  <% end %>
+</ul>
